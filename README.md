@@ -1,1 +1,1 @@
-Primeiro trabalho prático da disciplina Projeto e Análise de Algoritmos
+Trabalhos da disciplina Projeto e Análise de Algoritmos
