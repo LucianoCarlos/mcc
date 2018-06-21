@@ -220,8 +220,7 @@ int top_down_rec(Caixa caixas[], lista* cx_empilha, int n, int h, int j, Solucao
     h_anterior = h - caixas[j].a;
 
     if(h_anterior >=0) {
-        
-           
+
         // Percorre a lista de caixas empilhaveis, a fim de encontrar a solução ótima
         ptr = cx_empilha[j]->first;
         while(ptr) {
@@ -329,7 +328,6 @@ int bottom_up(Caixa caixas[], int n, int altura, lista *cx_empilha, Solucao **m)
                 valor_max = 0;
 
                 // Percorre a lista de caixas empilhaveis, a fim de encontrar a solução ótima
-                /*                
                 ptr = cx_empilha[i]->first;
                 while(ptr) {
                     valor_max = m[posicao_ant][ptr->item.indice].valor + caixas[i].v;
@@ -340,9 +338,9 @@ int bottom_up(Caixa caixas[], int n, int altura, lista *cx_empilha, Solucao **m)
                     }
 
                     ptr=ptr->next;
-                }*/
+                }
 
-                
+                /*
                 tipo_elemento e;
                 ptr = get_element(cx_empilha[i], &e);
                 while(ptr){
@@ -358,7 +356,7 @@ int bottom_up(Caixa caixas[], int n, int altura, lista *cx_empilha, Solucao **m)
                    ptr = next_element(cx_empilha[e.indice], &e, ptr);
 
                 } //while
-               
+                */
             } //for
         } //for
     }
